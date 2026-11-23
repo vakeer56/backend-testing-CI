@@ -10,6 +10,12 @@ app.get("/api/health", (req, res) => {
   });
 });
 
+app.get("/api/greeting", (req, res) => {
+  res.status(200).json({
+    message: "Hello from the sample route"
+  });
+});
+
 app.post("/api/users", (req, res) => {
   const { name, email } = req.body;
 

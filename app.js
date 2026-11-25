@@ -6,7 +6,7 @@ app.use(express.json());
 
 app.get("/api/health", (req, res) => {
   res.status(200).json({
-    message: "Server is healthy"
+    message: "Server is fine and good"
   });
 });
 

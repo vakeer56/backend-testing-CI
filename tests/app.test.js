@@ -11,7 +11,7 @@ test( "GET /api/health should return status code 200", async () => {
 
     assert.equal(response.status,200);
 
-    assert.equal(response.body.message, "Server is healthy");
+    assert.equal(response.body.message, "Server is fine and good");
 })
 
 test("POST /api/users should create a user and return 201", async () => {
